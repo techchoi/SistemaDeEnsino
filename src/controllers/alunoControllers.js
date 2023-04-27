@@ -6,8 +6,22 @@ const router = express.Router();
 
 //exemplo simples de hello world
 router.get('/',(req, res) => {
-    res.send('Hello World!')
+    res.send('Hello World!');
 })
 
+router.post('/',(req, res) => {
+    const nome = req.body;
+    console.log(req.body);
+    res.json(req.body);
+})
 
-module.exports = router;
+router.delete('/', (req, res) => {
+    res.send('Aluno deletado!');
+})
+
+router.put('/',(req, res) => {
+    res.send('Alteração realizada com sucesso !')
+})
+
+//o router é como se fosse um roteamento e serve para criar o controller
+module.exports = router; 
