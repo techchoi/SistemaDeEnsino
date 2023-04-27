@@ -2,13 +2,17 @@
   "name": "sistemadeensino",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/config/server.js",
+    "dev": "nodemon src/config/server.js"
   },
   "author": "NinaChoi",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
   }
 }
