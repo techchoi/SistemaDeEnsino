@@ -12,12 +12,12 @@ router.post('/', (req, res) => {
     res.json(req.body);
 })
 
-router.delete('/', (req, res) => {
+router.delete('/', (rep, res) => {
     res.send('Usuário deletado!');
 })
 
 router.put('/', (req, res) => {
-    res.send('Usuário alterado com sucesso !')
+    res.send('Usuário alterado com sucesso')
 })
 
 module.exports = router; 
